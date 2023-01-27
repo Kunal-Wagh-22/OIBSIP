@@ -1,0 +1,39 @@
+body{
+    background-color: #151515;
+}
+.container{
+    margin: 100px 0px 100px 530px;
+
+}
+
+
+.display{
+    width:612px;
+    margin-bottom: 15px;
+    height:70px;
+    font-size: 30px;
+    border: solid 2px white;
+    border-radius: 7px;
+    color: #151515;
+    background-color: white;
+
+}
+
+.button{
+    width: 150px;
+    height: 100px;
+   font-size: 40px;
+   color: black;
+   border: solid 1px black;
+}
+.header{
+    color: white;
+    text-align: center;
+}
+.header h1{
+    margin-top: 50px;
+    font-size: 70px;
+    
+    font-family: 'Playfair Display', serif;
+
+}

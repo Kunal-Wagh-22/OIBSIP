@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="header">
+        <h1>My Calculator</h1>
+    </div>
+    <form name="Calculator" >
+        <div class="container" >
+            <div class="row calculator-screen">
+                <div class="col-12">
+                    <input type="text" class="display" name = "Input" Size="35" > 
+                </div>
+            </div>
+            <div class="" >
+                <div class="col">
+                    <input type="button" class=" button btn btn-light" name = "one"  value=" 1 " OnClick="Calculator.Input.value += '1'">
+                    <input type="button" class=" button btn btn-light" name = "two" value=" 2 " OnClick="Calculator.Input.value += '2'"> 
+                    <input type="button" class=" button btn btn-light" name = "three"  value=" 3 " OnClick="Calculator.Input.value += '3'">  
+                    <input type="button"  class=" button btn btn-light" name="DoIt"  value=" . " Onclick="Calculator.Input.value += '.'">
+                </div>
+            </div>
+            <div class="row">
+                 <div class="col">
+                <input type="button" class=" button btn btn-light" name = "four" value=" 4 " OnCLick="Calculator.Input.value += '4'">  
+                <input type="button" class=" button btn btn-light" name = "five" value=" 5 " OnCLick="Calculator.Input.value += '5'">
+                <input type="button" class=" button btn btn-light" name = "six"  value=" 6 " OnCLick="Calculator.Input.value += '6'"> 
+                <input type="button" class=" button btn btn-light" name = "minus" value=" - " OnClick="Calculator.Input.value += ' - '">   
+    
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="button" class=" button btn btn-light" name = "seven"  value=" 7 " OnCLick="Calculator.Input.value += '7'"> 
+                    <input type="button" class=" button btn btn-light" name = "eight"  value=" 8" OnCLick="Calculator.Input.value += '8'"> 
+                    <input type="button" class=" button btn btn-light" name = "nine"  value=" 9 " OnCLick="Calculator.Input.value += '9'">
+                    <input type="button" class=" button btn btn-light" name = "mul"  value=" * "   OnClick="Calculator.Input.value += ' * '">    
+    
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="button"  class="button btn btn-light" name = "clear"  value=" c " OnClick="Calculator.Input.value = ''">
+                    <input type="button"  class=" button btn btn-light" name="zero"  value=" 0 " OnClick="Calculator.Input.value += '0'">
+                    <input type="button" class=" button btn btn-light" name="add"   value=" + " OnClick="Calculator.Input.value += ' + '">      
+                    <input type="button"  class=" button btn btn-danger" name="div"  value=" / " OnClick="Calculator.Input.value += ' / '"> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="button"  class="button btn btn-success" name = "doit"  value=" = " OnClick="Calculation()" style="width:615px">
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+
+
+
+
+</body>
+<script>
+
+    function Calculation() {
+        var input =document.querySelector(".display");
+        var sol = eval(input.value);  
+        input.value = sol;
+
+    }
+    
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
